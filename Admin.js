@@ -499,7 +499,7 @@ $(document).ready(() => {
     })
 
     $('#search-box').keyup(function (e) {
-      if(e.keyCode==8){
+      // if(e.keyCode==8){
         for ( var i = 0; i<document.getElementsByClassName("data-row").length;i++ ){
           document.getElementsByClassName("data-row")[i].style.backgroundColor = "white"
       }
@@ -523,31 +523,31 @@ $(document).ready(() => {
             document.getElementById(filterData[i].id).style.backgroundColor = "yellowgreen";
          }
      }
-    }
+    // }
 
       }
     })
 
     
-    $('#search-box').keyup(function (e) {
-          if (e.keyCode == 13) {
-            var inputVal = document.getElementById("search-box").value;
-            console.log(typeof inputVal)
-            if(inputVal==""){console.log("khali hai")}else{
-            var filterData = ResponseData.filter(x => x.firstName.toLowerCase().includes(inputVal.toLowerCase())||
-            x.lastName.toLowerCase().includes(inputVal.toLowerCase())||
-            x.email.toLowerCase().includes(inputVal.toLowerCase())||
-            x.phone.toLowerCase().includes(inputVal.toLowerCase())
-            )
+    // $('#search-box').keyup(function (e) {
+    //       if (e.keyCode == 13) {
+    //         var inputVal = document.getElementById("search-box").value;
+    //         console.log(typeof inputVal)
+    //         if(inputVal==""){console.log("khali hai")}else{
+    //         var filterData = ResponseData.filter(x => x.firstName.toLowerCase().includes(inputVal.toLowerCase())||
+    //         x.lastName.toLowerCase().includes(inputVal.toLowerCase())||
+    //         x.email.toLowerCase().includes(inputVal.toLowerCase())||
+    //         x.phone.toLowerCase().includes(inputVal.toLowerCase())
+    //         )
            
-             console.log(filterData)
-             for (var i =0;i< filterData.length;i++){
-                var idgetter = filterData[i].id
-                console.log(idgetter)
-                document.getElementById(filterData[i].id).style.backgroundColor = "yellowgreen";
-             }
-         }
-        }
+    //          console.log(filterData)
+    //          for (var i =0;i< filterData.length;i++){
+    //             var idgetter = filterData[i].id
+    //             console.log(idgetter)
+    //             document.getElementById(filterData[i].id).style.backgroundColor = "yellowgreen";
+    //          }
+    //      }
+    //     }
          
-    })
+    // })
 })
