@@ -490,12 +490,12 @@ $(document).ready(() => {
 
     $("#search-box").click(()=>{
         $("#searchLogo").css({"margin-right":"15px"})
-        for ( var i = 0; i<document.getElementsByClassName("data-row").length;i++ ){
-        document.getElementsByClassName("data-row")[i].style.backgroundColor = "white"
-    }
-    for ( var i = 0; i<document.getElementsByClassName("data-row").length;i+=2 ){
-        document.getElementsByClassName("data-row")[i].style.backgroundColor = "#f1f1f1"
-    }
+    //     for ( var i = 0; i<document.getElementsByClassName("data-row").length;i++ ){
+    //     document.getElementsByClassName("data-row")[i].style.backgroundColor = "white"
+    // }
+    // for ( var i = 0; i<document.getElementsByClassName("data-row").length;i+=2 ){
+    //     document.getElementsByClassName("data-row")[i].style.backgroundColor = "#f1f1f1"
+    // }
     })
 
     $('#search-box').keyup(function (e) {
