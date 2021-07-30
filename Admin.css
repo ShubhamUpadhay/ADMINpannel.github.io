@@ -177,12 +177,12 @@ td {
 }
 
 .active {
-  background-color: lightseagreen !important;
+  background-color: rgb(49, 247, 59) !important;
 }
 
 .active td {
   color: black;
 }
 .searched{
-  background-color:yellowgreen;
+  background-color:rgb(93, 236, 255);
 }
